@@ -1,0 +1,214 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #333;
+	
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+/*自定义字体图标*/
+/*1.通过@font-face定义自己的字体*/
+@font-face {
+    /*2.申明自己的字体名称*/
+    font-family: 'wjs';
+    /*3.引入字体文件（约束某一段字符代码什么图案）*/
+    src:
+    url(../fonts/MiFie-Web-Font.svg) format('svg'),
+    url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(../fonts/MiFie-Web-Font.woff) format('woff');
+}
+/*4.怎么使用维护性更好*/
+.wjs_icon{
+    font-family: wjs;
+}
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_name::before{
+    content: "\e93e";
+}
+.wjs_top{
+	width:100%;
+	border-bottom: 1px solid #ccc;
+	
+}
+.wjs_top>.container{}
+.wjs_top>.container>.row{}
+
+.wjs_top>.container>.row>div{
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.wjs_top>.container>.row>div>a{
+	/*display: block;*/
+}
+.wjs_top>.container>.row>div+div{
+	border-left:1px solid #ccc;
+}
+.a_shouji{
+	position: relative;
+	display: block;
+}
+.a_shouji>img{
+	display: none;
+	position: absolute;
+	top:40px;
+	left:20px;
+	z-index: 10;
+	
+	
+}
+.a_shouji:hover>img{
+	display: block;
+	
+}
+
+
+.wjs-nav {
+  background-color: #fff;
+  border-color: #e7e7e7;
+ 
+  border-top: none;
+  
+}
+.wjs-nav .wjs_icon_logo{
+	font-size: 50px;
+	vertical-align: middle;
+	color: #e92322;
+}
+.wjs-nav .wjs_icon_name{
+	font-size: 36px;
+	color: #333;
+	vertical-align: middle;
+	
+}
+.wjs-nav .navbar-brand {
+  color: #777;
+  
+  height: 80px;
+  line-height: 50px;
+}
+.wjs-nav .navbar-brand:hover,
+.wjs-nav .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs-nav .navbar-text {
+  color: #777;
+}
+.wjs-nav .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs-nav .navbar-nav > li > a:hover,
+.wjs-nav .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 3px solid #e92323;
+}
+.wjs-nav .navbar-nav > .active > a,
+.wjs-nav .navbar-nav > .active > a:hover,
+.wjs-nav .navbar-nav > .active > a:focus {
+  color: #555;
+  /*background-color: #e7e7e7;*/
+ border-bottom: 3px solid #e92323;
+}
+.wjs-nav .navbar-nav > .disabled > a,
+.wjs-nav .navbar-nav > .disabled > a:hover,
+.wjs-nav .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+ /*border-bottom: 2px solid darkred;*/
+  
+}
+
+菊花茶
+
+
+.wjs-nav .navbar-toggle {
+  border-color: #ddd;
+  margin-top:23px;
+}
+.wjs-nav .navbar-toggle:hover,
+.wjs-nav .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs-nav .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs-nav .navbar-collapse,
+.wjs-nav .navbar-form {
+  border-color: #e7e7e7;
+}
+.wjs-nav .navbar-nav > .open > a,
+.wjs-nav .navbar-nav > .open > a:hover,
+.wjs-nav .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .wjs-nav .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .wjs-nav .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wjs-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .wjs-nav .navbar-nav .open .dropdown-menu > .active > a,
+  .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.wjs-nav .navbar-link {
+  color: #777;
+}
+.wjs-nav .navbar-link:hover {
+  color: #333;
+}
+.wjs-nav .btn-link {
+  color: #777;
+}
+.wjs-nav .btn-link:hover,
+.wjs-nav .btn-link:focus {
+  color: #333;
+}
+.wjs-nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs-nav .btn-link:hover,
+.wjs-nav .btn-link[disabled]:focus,
+fieldset[disabled] .wjs-nav .btn-link:focus {
+  color: #ccc;
+}
+
+
+/*.wjs_icon_tel::before{
+    content: "\e909";
+}	*/
