@@ -1,0 +1,103 @@
+#asideShop{
+    width:34px;
+    background: #595656;
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    right: 0px;
+    top:0px;
+    bottom:0px;
+    text-align: center;
+    .gaizhu{
+        width:34px;
+        height: 100%;
+        position: absolute;
+        left:0px;
+        top:0px;
+        background: #595656;
+    }
+    .asideCart_Div{
+        height:100%;
+        width:180px;
+        background: #DCDCDC;
+        position: absolute;
+        left:0px;
+        top:0px;
+        text-align: center;
+        overflow:auto;
+        >p{
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            background:#868688;
+            color: #FE6600;
+            font-size: 14px;
+        }
+        li{
+			height:180px;
+			width:160px;
+            margin: 0 auto;
+            border-bottom:1px dashed #D6D8EC;
+            margin-top:20px ;
+            text-align: center;
+            img{
+				height:80%;
+				width: 80%;
+				margin: 0 auto;
+				margin-bottom: 10px;
+//              float: lef;
+            }
+            span{
+				color:darkgoldenrod;
+				display: inline-block;
+				
+//				float: left;
+//				clear: both;
+//				float:left;
+//				margin-right:20px;
+                
+            }
+        }
+    }
+    dl{
+        position: absolute;
+        z-index: 100;
+        left:4px;
+        li{
+            a{
+                color: #fff;
+            }
+            a:hover{
+                color: #F8CF9E;
+            }
+            font-family: "微软雅黑";
+            font-size:14px;
+            width:20px;
+            margin:0 auto;
+            margin-top:20px ;
+            color: #fff;
+            list-style: none;
+            text-align: center;
+            color: #DCDCDC;
+        }
+        li{
+            cursor: pointer;
+            position: relative;
+            .xiaoSpan{
+                width:100px;
+                height:30px;
+                border:1px solid #ccc;
+                border-radius: 4px;
+                display: block;
+                position: absolute;
+                color:#D2691E;
+                line-height: 30px;
+                background:#fff;
+                left:-150px;
+                top:0px;
+                display: none;
+                
+            }
+        }
+    }
+}

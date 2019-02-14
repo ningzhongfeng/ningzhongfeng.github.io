@@ -1,0 +1,209 @@
+/* 
+ *#top0
+ */
+*{margin:0;padding:0;font-size:12px;}
+img{display: block;border:none;}
+a{text-decoration: none;color:#737373;}
+a:hover{color: #ff6a00;}
+li{list-style:none;}
+a>img{border:none;}
+#top0{
+    
+    width:1280px;
+    height:36px;
+    background:#f2f2f2;
+    margin:0 auto;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    >p{
+        float: left;
+        margin-left:50px ;
+        line-height: 36px;
+        >a{
+            float: left;
+            margin-right: 18px; 
+            height: 34px;
+            padding-left: 0;
+            padding:0 6px;
+            border:1px solid #f2f2f2;
+            >img{
+                float: left;
+                vertical-align: middle;
+            }
+        }
+        >a:nth-child(1){
+            @extend a;
+            background: url(../img/star.png) no-repeat;
+            background-position:0 center;
+            padding-left: 20px;
+        }
+        >a:nth-child(2){
+            @extend a;
+            background: url(../img/weixin.png) no-repeat; 
+            background-position:0 center;
+            padding-left: 26px;
+        }
+        >a:nth-child(3){
+           @extend a;
+           background: url(../img/shouji.png) no-repeat; 
+           background-position:0 center;
+           padding-left: 20px;
+        }
+    }
+    >ul{
+        float: right;
+        >li{
+            height:34px;
+            line-height:34px;
+            float: left;
+            padding-left: 8px;
+            border-left:1px solid #f2f2f2;
+            border-right:1px solid #f2f2f2;
+            img{
+                float: left;
+            }
+        }
+        >li:nth-child(1){
+            float: left;
+        }
+        >li:last-child{
+            border:none;
+            margin-right: 40px;
+        }
+        li:nth-child(4){
+           border:1px solid #f2f2f2;
+           position: relative;
+        }
+             
+        >li:nth-child(5){
+            @extend li:nth-child(4);
+            background:url(../img/car.png) no-repeat left center;
+            padding-left: 26px;
+            >div{
+               background:#fff;
+               width:240px;
+//             height: 40px;
+               position: absolute;
+               z-index: 100;
+               border:1px solid #f2f2f2;
+               right: 0px;
+               display: none;
+               li{
+                   border-bottom:1px dashed #ccc;
+               }
+               li:last-child{
+                   border:none ;
+               }
+            }
+        }
+        .kehuLi{
+            position: relative;
+            .kehuUl{
+                background:#fff;
+                background-image:none ;
+                list-style: none;
+                width:80px;
+                height: 134px;
+                display:none;
+                border:1px solid #f2f2f2;
+                position: absolute;
+                right: -25px;
+                top:34px;
+                text-align: center;
+                line-height: 2;
+              
+            }
+        }
+        
+    }
+    >.hualiER{
+        background:#fff;
+        padding-top:10px;
+        text-align:center;
+        width:124px;width:124px;
+        border:1px solid #f2f2f2;
+        position: absolute;
+        left: 313px;
+        top: 36px;
+        display: none;
+        border-top:none;
+        >img{
+            width:100px;
+            width:100px;
+            margin:0 auto;
+        }
+    }
+    >.weixinER{
+        @extend .hualiER;
+        left: 213px;
+        >img{
+//          @extend .hualiER>img
+            width:100px;
+            width:100px;
+            margin:0 auto;
+            
+            
+        }
+        
+    }
+
+
+}
+//search
+#search{
+    width:1280px;
+    height: 120px;
+    margin:0 auto;
+    >img{
+        float: left;
+        margin-left:40px;
+        margin-top:26px;
+    }
+    >.logoFont{
+        float:left;
+        padding-left: 10px;
+        border-left:1px solid #f2f2f2;
+        margin-top:40px;
+    }
+    >.searchDiv{
+        
+        margin-top:40px;
+        margin-left:138px;
+        width:325px;
+        height: 56px;
+        float: left;
+        >p{
+            padding-top:6px;
+            float: left;
+            >a{
+                padding-right:10px;
+                margin-left:10px;
+                border-right:1px solid #e0d9e0;
+            }
+            >a:nth-child(1){
+                margin-left: 0;
+            }
+        }
+        >input:nth-child(1){
+            width:240px;
+            height: 34px;
+            border:1px solid #ff6a00;
+            float: left;
+            font-size: 14px;
+        }
+        >input:nth-child(2){
+            width:82px;
+            height: 37px;
+            background: #ff6a00;
+            float: left;
+            border:none;
+            font-size: 16px;
+            color:#fff 
+        }
+    }
+    >.kefuNum{
+        float: right;
+        margin-top:40px;
+        margin-right: 50px;
+    }
+}

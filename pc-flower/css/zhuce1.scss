@@ -1,0 +1,69 @@
+#main{
+     @mixin Tex{
+        width:300px;
+        height: 40px;
+        float: left;
+        color:#868688;
+     }
+    .formDiv{
+        >p:nth-child(3) .text1{
+            @include Tex;
+        }
+        >p:nth-child(4) .text1{
+            @include Tex;
+        }
+        >p:nth-child(5) .text1{
+            @include Tex;
+
+        }
+        >p:nth-child(5){
+            margin-right: 43px;
+        }
+        >p:nth-child(6){
+            margin-left:36px;
+            float: left;
+        }
+        >p:nth-child(6) input{
+            height:40px;
+            width: 110px;
+            float: left;
+        } 
+        >p:nth-child(6) .yanzhengMa{
+            margin:0 12px;
+            width:72px;
+            height: 26px;
+            display: inline-block;
+            background: #ccc url(../img/yz1.jpg);
+            float: left;
+            margin-top:5px;
+            b:nth-child(1){
+                font-size:24px ;
+            }
+            b:nth-child(4){
+                font-size:24px ;
+            }
+            b:nth-child(2){
+                font-size:16px ;
+            }
+        }
+        >p:nth-child(6) span:last-child{
+            color:#FF6A00;
+            margin-top:10px;
+            float: right;
+            cursor: pointer;
+        }
+          >p:nth-child(6) span:hover{
+              color: yellowgreen;
+              cursor: pointer;
+          }
+        .dl2{
+            border:none;
+            font-size: 16px;
+            float: left;
+        }
+        .zc2{
+            border-bottom: 2px solid #FF6A00;
+            font-size: 16px;
+        }
+    }
+}
